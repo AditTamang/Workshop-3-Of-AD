@@ -5,7 +5,7 @@
     {
         static void Main(string[] args)
         {
-            //for loop
+            //for loop to calculate sum from 1 to N
             Console.Write("Enter a number N: ");
             int n = Convert.ToInt32(Console.ReadLine());
             int sum = 0;
@@ -17,7 +17,7 @@
 
             Console.WriteLine("Sum from 1 to " + n + " = " + sum);
 
-            //while loop
+            //while loop with continue and break
             int num = 1;
             Console.WriteLine("\nNumbers from 1 to 20 (skip multiples of 4, stop at 15):");
             while (num <= 20)
