@@ -10,6 +10,7 @@ namespace Task_4
     {
         static void Main(string[] args)
         {
+            //Console
             Console.Write("Enter a number (1–7): ");
             int day = Convert.ToInt32(Console.ReadLine());
 
