@@ -1,10 +1,30 @@
-﻿namespace Task_3
+﻿using System;
+
+namespace Task_3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age < 13)
+            {
+                Console.WriteLine("Child");
+            }
+            else if (age >= 13 && age <= 19)
+            {
+                Console.WriteLine("Teenager");
+            }
+            else if (age >= 20 && age <= 59)
+            {
+                Console.WriteLine("Adult");
+            }
+            else
+            {
+                Console.WriteLine("Senior Citizen");
+            }
         }
     }
 }

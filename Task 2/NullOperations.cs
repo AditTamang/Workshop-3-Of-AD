@@ -8,18 +8,21 @@ namespace Task_2
 {
     internal class NullOperations
     {
-       public void PerformNullCheck()
+        public void PerformNullChecks()
         {
-            string userName = null;
+            // Declare a string variable and assign null
+            string username = null;
 
-            string nullCheck = (userName == null) ? "Username is null" : userName;
-            Console.WriteLine(nullCheck);
+            // 1. Using the Ternary Operator (? :)
+            string ternaryCheck = (username == null) ? "Username is not available" : username;
+            Console.WriteLine(ternaryCheck);
 
-            string userName1 = null;
+            // 2. Using the Null-Coalescing Operator (??)
+            Console.WriteLine(username ?? "Username is not available (using ??)");
 
-            string nullCoalescing = (userName1 ?== null) ? "UserName is null" : userName1;
-
-
+            // 3. Using the Null-Coalescing Assignment Operator (??=)
+            username ??= "DefaultUser";
+            Console.WriteLine("Updated username after ??=: " + username);
         }
     }
 }
